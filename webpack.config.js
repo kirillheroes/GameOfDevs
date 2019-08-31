@@ -1,5 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 
 module.exports = {
   entry: "./src/index.jsx",
@@ -19,13 +22,24 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"
+    }),
+	 new MiniCssExtractPlugin({
+      filename: 'styles.css',
+    }),
+	new webpack.LoaderOptionsPlugin({
+      options: {
+        context: __dirname,
+        postcss: [
+          autoprefixer
+        ]
+      }
     })
   ]
 };
