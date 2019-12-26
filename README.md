@@ -1,2 +1,3 @@
-# GameOfDevs
-My first test react web app about indie developers
+# Zoopark_Playground
+
+Kirill Oshev's from Zoopark team test project
