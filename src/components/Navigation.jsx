@@ -1,22 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from '../pages/Home';
-import ComfortMenu from '../pages/Comfort_Menu';
+import ComfortMenu from '../pages/ComfortMenu';
 
-function Nav() {
+function Navigation() {
   return (
     <BrowserRouter>
       <div>
         <ul>
           <li>
-            {' '}
             <Link to="/"> Home </Link>
-            {' '}
           </li>
           <li>
-            {' '}
             <Link to="/comf_menu"> Удобное меню </Link>
-            {' '}
           </li>
         </ul>
       </div>
@@ -27,4 +23,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navigation;

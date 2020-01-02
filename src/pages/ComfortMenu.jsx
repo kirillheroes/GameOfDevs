@@ -1,5 +1,5 @@
 import React from 'react';
-import Rectan from '../components/Rect';
+import Rectan from '../components/Rectan';
 
 const ComfortMenu = () => (
   <div>

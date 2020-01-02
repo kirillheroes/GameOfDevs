@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/App.css';
-import Nav from './Nav';
+import Navigation from './Navigation';
 
 function App() {
   return (
-    <Nav />
+    <Navigation />
   );
 }
 

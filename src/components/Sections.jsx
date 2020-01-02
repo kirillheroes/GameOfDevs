@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Sections.css';
 import PropTypes from 'prop-types';
-import ArrowsIcon from './Arrows';
+import Icon from './Icon';
 
 function Section({
   text,
@@ -11,7 +11,7 @@ function Section({
       <div className="section_name">
         {text}
       </div>
-      <ArrowsIcon />
+      <Icon name="unfold_more" />
       <br />
     </div>
   );

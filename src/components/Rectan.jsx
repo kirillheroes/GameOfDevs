@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/Rect.css';
-import CloseIcon from './Close';
+import '../styles/Rectan.css';
+import Icon from './Icon';
 import Section from './Sections';
 
 function Rectan() {
   return (
     <div id="rectangle" className="menu_rect">
-      <CloseIcon />
+      <Icon name="clear" />
       Super Menu
 
       <Section text="Section 1" />

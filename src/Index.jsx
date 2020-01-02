@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from './components/App';
-import ComfortMenu from './pages/Comfort_Menu';
+import ComfortMenu from './pages/ComfortMenu';
 
 
 ReactDOM.render(
